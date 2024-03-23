@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TG22JCFDZQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TG22JCFDZQ");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta seo purpose tag  -->
+    <meta
+      name="description"
+      content="Itooso: Revolutionizing Education and Management Solutions. We specialize in software solutions for education, Learning Management Systems (LMS), Point of Sale (POS) systems, and customizable personalized solutions. Transforming the way institutions and businesses operate."
+    />
+    <meta
+      name="keywords"
+      content="Itooso,tooso,itoso,Itooso BD,Bangladeshi software company,tooso, itoo, iso, itoso, toso, itooooso, itooso, software, software company, software itooso, software, itooso dhaka, dhaka itooso, tooso dhaka, itoosoft, ito, software company,software,education, LMS, Learning Management System, POS, Point of Sale, management system solution, customizable solutions, personalized solutions"
+    />
+    <meta name="author" content="Md. Arafat Akash" />
+    <meta name="robots" content="index, follow" />
+    <!-- manifest link -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- favicon link  -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- animation on scroll css link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- swiper css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- font awesome icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- external css link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- website title  -->
+    <title>ITooso Frontend Task</title>
+  </head>
+
+  <body>
+    <!-- header start  -->
+    <header id="header-nav">
+      <nav>
+        <div class="left-nav">
+          <a><i id="menubar" class="fa-solid fa-bars"></i></a>
+          <a href="#banners">
+            <h1>Title <span>.</span></h1>
+          </a>
+        </div>
+        <div class="middle-nav">
+          <form action="#" method="post" autocomplete="off">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search here.."
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="right-nav">
+          <a href="#"><button>Login</button></a>
+        </div>
+        <div class="side-nav" id="sidebar">
+          <ul>
+            <li>
+              <form action="#" method="post" autocomplete="off">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Search here.."
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </li>
+            <li>
+              <i class="fa-solid fa-house"></i><a href="#banners">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-list"></i
+              ><a href="#popular-category">Category</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-school"></i
+              ><a href="#popular">Learn more</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-copyright"></i><a href="#brands">Brands</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-star"></i><a href="#reviews">Reviews</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-dollar-sign"></i
+              ><a href="#weekly-deals">Weekly Deals</a>
+            </li> 
+            <li>
+              <i class="fa-solid fa-question"></i><a href="#faqs">FAQs</a>
+            </li><li>
+              <i class="fa-solid fa-file-contract"></i
+              ><a href="#contact">Contact Us</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i
+              ><a href="#feature-list">Special Features</a>
+            </li>
+            <li>
+              <a href="#"><button>Login</button></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header end  -->
+
+    <!-- main start  -->
+    <main>
+      <!-- progress bar start  -->
+      <div class="progress">
+        <div class="highlight" id="bar-highlight"></div>
+      </div>
+      <!-- progress bar start  -->
+
+      <!-- cookie set start -->
+      <div class="cookie">
+        <div class="left">
+          <h2>Your Privacy</h2>
+          <p>
+            We use cookies to personalise content and ads, to provide social
+            media features and to analyse our traffic. We also share information
+            about your use of our site with our social media, advertising and
+            analytics partners. You can select your cookie preferences by
+            clicking the buttons on the right.<span
+              >Data Protection Portal</span
+            >
+          </p>
+        </div>
+
+        <div class="right">
+          <button class="preference">Preference Center</button>
+          <button class="reject">Reject All</button>
+          <button class="accept">I'm OKAY with that</button>
+        </div>
+      </div>
+      <!-- cookie set end -->
+
+      <!-- banners section start  -->
+      <section id="banners">
+        <div class="swiper banner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images/banners/banner-img-1.svg"
+                alt="Banner Image 1"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/banners/banner-img-2.svg"
+                alt="Banner Image 2"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/banners/banner-img-3.svg"
+                alt="Banner Image 3"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- banners section end  -->
+
+      <!-- popular category section start  -->
+      <section id="popular-category">
+        <h1>Popular <span>Categories</span></h1>
+        <div class="swiper product-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-1.svg"
+                alt="Product Image 1"
+                loading="lazy"
+              />
+              <h3>Product 1</h3>
+              <p>BDT. 199</p>
+              <p class="pills">Best Seller</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-2.svg"
+                alt="Product Image 2"
+                loading="lazy"
+              />
+              <h3>Product 2</h3>
+              <p>BDT. 199</p>
+              <p class="pills">Top Rated</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-3.svg"
+                alt="Product Image 3"
+                loading="lazy"
+              />
+              <h3>Product 3</h3>
+              <p>BDT. 199</p>
+              <p class="pills">Best Seller</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-4.svg"
+                alt="Product Image 4"
+                loading="lazy"
+              />
+              <h3>Product 4</h3>
+              <p>BDT. 199</p>
+              <p class="pills">Top Rated</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-5.svg"
+                alt="Product Image 5"
+                loading="lazy"
+              />
+              <h3>Product 5</h3>
+              <p class="pills">Best Seller</p>
+              <p>BDT. 199</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-1.svg"
+                alt="Product Image 1"
+                loading="lazy"
+              />
+              <h3>Product 1</h3>
+              <p>BDT. 199</p>
+              <p class="pills">Best Seller</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-2.svg"
+                alt="Product Image 2"
+                loading="lazy"
+              />
+              <h3>Product 2</h3>
+              <p>BDT. 199</p>
+              <p class="pills">Top Rated</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-3.svg"
+                alt="Product Image 3"
+                loading="lazy"
+              />
+              <h3>Product 3</h3>
+              <p>BDT. 199</p>
+              <p class="pills">Best Seller</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-4.svg"
+                alt="Product Image 4"
+                loading="lazy"
+              />
+              <h3>Product 4</h3>
+              <p>BDT. 199</p>
+              <p class="pills">Top Rated</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/products/product-img-5.svg"
+                alt="Product Image 5"
+                loading="lazy"
+              />
+              <h3>Product 5</h3>
+              <p class="pills">Best Seller</p>
+              <p>BDT. 199</p>
+              <a class="addcart-link" href="#">Shop Now</a>
+            </div>
+          </div>
+          <div
+            class="swiper-button-next product-next fa-solid fa-circle-right"
+          ></div>
+          <div
+            class="swiper-button-prev product-prev fa-solid fa-circle-left"
+          ></div>
+        </div>
+      </section>
+      <!-- popular category section end  -->
+
+      <!-- best-top-seller section start  -->
+
+      <!-- best-top-seller section end  -->
+
+      <!-- popular section start  -->
+      <section id="popular">
+        <h1 data-aos="fade-up">Learn & <span>Get More</span></h1>
+        <div class="popular-content">
+          <div class="popular-img" data-aos="fade-right">
+            <img
+              src="images/popular/popular-img-1.svg"
+              alt="Popular Image 1"
+              loading="lazy"
+            />
+            <div class="popular-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                vel, quibusdam facilis nobis porro voluptate rem quaerat numquam
+                culpa ratione?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div class="popular-vid" data-aos="fade-left">
+            <video src="images/popular/popular-vid-1.mp4" controls></video>
+          </div>
+        </div>
+      </section>
+      <!-- popular section start  -->
+
+      <!-- brands section start  -->
+      <section id="brands">
+        <h1 data-aos="fade-up">Popular <span>Brands</span></h1>
+        <div class="brand-image" data-aos="fade-down">
+          <img
+            src="images/brands/brand-img-1.svg"
+            alt="Brand Image 1"
+            loading="lazy"
+          />
+          <img
+            src="images/brands/brand-img-2.svg"
+            alt="Brand Image 2"
+            loading="lazy"
+          />
+          <img
+            src="images/brands/brand-img-3.svg"
+            alt="Brand Image 3"
+            loading="lazy"
+          />
+          <img
+            src="images/brands/brand-img-4.svg"
+            alt="Brand Image 4"
+            loading="lazy"
+          />
+          <img
+            src="images/brands/brand-img-5.svg"
+            alt="Brand Image 5"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <!-- brands section end  -->
+
+      <!-- reviews section start  -->
+      <section id="reviews">
+        <h1 data-aos="fade-up">Customer <span>Reviews</span></h1>
+        <div class="swiper review-swiper" data-aos="fade-down">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <i class="fa-solid fa-user"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                ratione nostrum molestias nulla. Ad provident fuga laboriosam.
+                Repudiandae, facilis? Et earum vel eum asperiores! Officiis iste
+                quae ducimus veniam sit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor repellendus nobis mollitia perspiciatis
+                cumque veniam animi recusandae repudiandae! Eos quasi deleniti
+                quas porro iure pariatur delectus! Placeat ex quis cumque vero.
+                Dicta eius perspiciatis sit, quos non soluta molestias numquam
+                nisi qui nam sed obcaecati omnis eos id ad quibusdam?
+              </p>
+              <h3>User 1</h3>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <i class="fa-solid fa-user"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                ratione nostrum molestias nulla. Ad provident fuga laboriosam.
+                Repudiandae, facilis? Et earum vel eum asperiores! Officiis iste
+                quae ducimus veniam sit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor repellendus nobis mollitia perspiciatis
+                cumque veniam animi recusandae repudiandae! Eos quasi deleniti
+                quas porro iure pariatur delectus! Placeat ex quis cumque vero.
+                Dicta eius perspiciatis sit, quos non soluta molestias numquam
+                nisi qui nam sed obcaecati omnis eos id ad quibusdam?
+              </p>
+              <h3>User 2</h3>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <i class="fa-solid fa-user"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                ratione nostrum molestias nulla. Ad provident fuga laboriosam.
+                Repudiandae, facilis? Et earum vel eum asperiores! Officiis iste
+                quae ducimus veniam sit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor repellendus nobis mollitia perspiciatis
+                cumque veniam animi recusandae repudiandae! Eos quasi deleniti
+                quas porro iure pariatur delectus! Placeat ex quis cumque vero.
+                Dicta eius perspiciatis sit, quos non soluta molestias numquam
+                nisi qui nam sed obcaecati omnis eos id ad quibusdam?
+              </p>
+              <h3>User 3</h3>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <i class="fa-solid fa-user"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                ratione nostrum molestias nulla. Ad provident fuga laboriosam.
+                Repudiandae, facilis? Et earum vel eum asperiores! Officiis iste
+                quae ducimus veniam sit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor repellendus nobis mollitia perspiciatis
+                cumque veniam animi recusandae repudiandae! Eos quasi deleniti
+                quas porro iure pariatur delectus! Placeat ex quis cumque vero.
+                Dicta eius perspiciatis sit, quos non soluta molestias numquam
+                nisi qui nam sed obcaecati omnis eos id ad quibusdam?
+              </p>
+              <h3>User 4</h3>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <i class="fa-solid fa-user"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                ratione nostrum molestias nulla. Ad provident fuga laboriosam.
+                Repudiandae, facilis? Et earum vel eum asperiores! Officiis iste
+                quae ducimus veniam sit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor repellendus nobis mollitia perspiciatis
+                cumque veniam animi recusandae repudiandae! Eos quasi deleniti
+                quas porro iure pariatur delectus! Placeat ex quis cumque vero.
+                Dicta eius perspiciatis sit, quos non soluta molestias numquam
+                nisi qui nam sed obcaecati omnis eos id ad quibusdam?
+              </p>
+              <h3>User 5</h3>
+              <div class="review-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- reviews section end  -->
+
+      <!-- deal of the week section start-->
+      <section id="weekly-deals">
+        <div class="time">
+          <h1>Deal Of The Week</h1>
+          <h3>Product Name</h3>
+          <p>Price: 400 / Perfume</p>
+          <div class="timer-countdown">
+            <div>
+              <p id="days">00</p>
+              <span>&nbsp;&nbsp;&nbsp;Days&nbsp;&nbsp;&nbsp;</span>
+            </div>
+            <div>
+              <p id="hours">00</p>
+              <span>&nbsp;&nbsp;Hours&nbsp;&nbsp;</span>
+            </div>
+            <div>
+              <p id="minutes">00</p>
+              <span>Minutes</span>
+            </div>
+            <div>
+              <p id="seconds">00</p>
+              <span>Seconds</span>
+            </div>
+          </div>
+          <a href="" id="deal-shop">Shop Now</a>
+        </div>
+        <div class="product-img">
+          <img
+            src="images/products/product-img-1.svg"
+            loading="lazy"
+            alt="Product 1"
+          />
+        </div>
+      </section>
+      <!-- deal of the week section start-->
+
+      <!-- accordian section start  -->
+      <section id="faqs">
+      <h1 data-aos="fade-up">Frequently Asked <span>Questions</span></h1>
+      <button data-aos="fade-down" class="question">Question 1</button>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <button data-aos="fade-down" class="question">Question 2</button>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <button data-aos="fade-down" class="question">Question 3</button>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button data-aos="fade-down" class="question">Question 4</button>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button data-aos="fade-down" class="question">Question 5</button>
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </section>
+      <!-- accordian section end  -->
+
+      <!-- contact section start  -->
+      <section id="contact">
+        <h1 data-aos="fade-up">Contact <span>Us</span></h1>
+        <div class="contact-body">
+          <div class="contact-form" data-aos="fade-right">
+            <form action="#" method="post" autocomplete="off">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Enter your message"
+              ></textarea>
+              <button type="submit">Send message</button>
+            </form>
+          </div>
+          <div class="contact-map" data-aos="fade-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.9679797930394!2d90.4378129113841!3d23.819737642576783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70e7300b035%3A0x9f20e1c77b71e178!2sITooso!5e0!3m2!1sen!2sbd!4v1711177337856!5m2!1sen!2sbd"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- contact section end  -->
+
+      <!-- backtotop section start  -->
+      <div id="back-to-top">
+        <a><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+      </div>
+      <!-- backtotop section end  -->
+
+      <!-- special feature section start  -->
+      <section id="feature-list">
+        <div class="features">
+          <div class="feature-icon">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="feature-advantage">
+            <h3>Free Shipping</h3>
+            <p>For all order</p>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feature-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div class="feature-advantage">
+            <h3>Delivery On Time</h3>
+            <p>If good have problems</p>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feature-icon">
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+          <div class="feature-advantage">
+            <h3>Secure Payment</h3>
+            <p>100% secure payment</p>
+          </div>
+        </div>
+      </section>
+      <!-- special feature section end  -->
+    </main>
+    <!-- main end  -->
+
+    <!-- footer start  -->
+    <footer>
+      <div class="upper">
+        <div class="left">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            perspiciatis odio aut saepe nulla, eligendi amet aliquam porro eius
+            est quibusdam optio consequatur beatae quae esse blanditii voluptate
+            veritatis! Soluta non, dolore sit molestiae velit ea esse
+            necessitatibus est voluptatem?
+          </p>
+          <ul>
+            <li>
+              <a><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="footer-link">
+            <h1>Footer 1</h1>
+            <ul>
+              <li><a href="#banners">Home</a></li>
+              <li><a href="#popular-category">Category</a></li>
+              <li><a href="#popular">Learn more</a></li>
+              <li><a href="#brands">Brands</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-link">
+            <h1>Footer 2</h1>
+            <ul>
+              <li><a href="#banners">Home</a></li>
+              <li><a href="#popular-category">Category</a></li>
+              <li><a href="#popular">Learn more</a></li>
+              <li><a href="#brands">Brands</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-link">
+            <h1>Footer 3</h1>
+            <ul>
+              <li><a href="#banners">Home</a></li>
+              <li><a href="#popular-category">Category</a></li>
+              <li><a href="#popular">Learn more</a></li>
+              <li><a href="#brands">Brands</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="lower">
+        <p>&copy; <span id="update-year"></span> Title. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- footer end  -->
+    <!-- animation on scroll js link  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- external js link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
