@@ -1,7 +1,6 @@
 // navbar side menu toggle event
 const menuBar = document.getElementById("menubar");
 const sideBar = document.getElementById("sidebar");
-
 menuBar.onclick = () => {
   if (sideBar.classList.contains("active")) {
     sideBar.classList.remove("active");
@@ -11,13 +10,11 @@ menuBar.onclick = () => {
     localStorage.setItem("menu-side-bar", "open");
   }
 };
-
 const mainBody = document.querySelector("main");
 mainBody.onclick = () => {
   sideBar.classList.remove("active");
   localStorage.setItem("menu-side-bar", "close");
 };
-
 const toggleSideMenuBar = localStorage.getItem("menu-side-bar");
 if (toggleSideMenuBar == "open") {
   sideBar.classList.add("active");
@@ -76,7 +73,7 @@ updateYear.innerHTML = new Date().getFullYear();
 const backToTop = document.getElementById("back-to-top");
 const container = document.querySelector("body");
 const highlight = document.getElementById("bar-highlight");
-
+// window scroll 
 window.onscroll = () => {
   if (
     document.body.scrollTop > 200 ||
@@ -86,7 +83,6 @@ window.onscroll = () => {
   } else {
     backToTop.style.display = "none";
   }
-
   // scroll progress bar
   let cheight = container.offsetHeight - window.innerHeight;
   let cpos = container.getBoundingClientRect();
@@ -95,7 +91,6 @@ window.onscroll = () => {
   let csswidth = Math.floor(100 - progress);
   highlight.style.width = csswidth + "%";
 };
-
 backToTop.onclick = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -115,22 +110,18 @@ var reviewswiper = new Swiper(".review-swiper", {
 AOS.init();
 
 // cookie set
-
 const cookieBox = document.querySelector(".cookie");
 const acceptBtn = document.querySelector(".cookie .right .accept");
 const rejectBtn = document.querySelector(".cookie .right .reject");
-
 setTimeout(() => {
   cookieBox.style.visibility = "visible";
 }, 5000);
-
 rejectBtn.onclick = () => {
   cookieBox.style.visibility = "hidden";
   setTimeout(() => {
     cookieBox.style.visibility = "visible";
   }, 60000);
 };
-
 acceptBtn.onclick = () => {
   document.cookie = "fname=Itooso; max-age=" + 60 * 60 * 24 * 30;
   if (document.cookie) {
@@ -139,42 +130,43 @@ acceptBtn.onclick = () => {
     alert("Cookie can't be set");
   }
 };
-
 let check = document.cookie.indexOf("fname=Itooso");
 check != -1
   ? cookieBox.classList.add("hide")
   : cookieBox.classList.remove("hide");
 
 // weekly deals countdown
-let countDownDate = new Date("Dec 31, 2026 00:00:00").getTime();
-let x = setInterval(function () {
+const countDownDate = new Date("Apr 31, 2024 00:00:00").getTime();
+const daysText = document.getElementById("days");
+const hoursText = document.getElementById("hours");
+const minutesText = document.getElementById("minutes");
+const secondsText = document.getElementById("seconds");
+const setTimeDown = setInterval(function () {
   let now = new Date().getTime();
-  let d = countDownDate - now;
-  let days = Math.floor(d / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((d % (1000 * 60)) / 1000);
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
-  if (d < 0) {
-    clearInterval(x);
-    document.getElementById("days").innerHTML = "00";
-    document.getElementById("hours").innerHTML = "00";
-    document.getElementById("minutes").innerHTML = "00";
-    document.getElementById("seconds").innerHTML = "00";
-    document.getElementById("deal-shop").style.pointerEvents = "none";
+  let timerDate = countDownDate - now;
+  let days = Math.floor(timerDate / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((timerDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((timerDate % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((timerDate % (1000 * 60)) / 1000);
+  daysText.innerHTML = days;
+  hoursText.innerHTML = hours;
+  minutesText.innerHTML = minutes;
+  secondsText.innerHTML = seconds;
+  if (timerDate < 0) {
+    clearInterval(setTimeDown);
+    daysText.innerHTML = "00";
+    hoursText.innerHTML = "00";
+    minutesText.innerHTML = "00";
+    secondsText.innerHTML = "00";
   }
 }, 1000);
 
-// faq section 
+// faq section
 const question = document.querySelectorAll(".question");
 const answer = document.querySelectorAll(".answer");
-
-question.forEach((element,index)=>{
-element.onclick=()=>{
-  // answer.forEach((ans)=>{ ans.classList.remove('active')})
-  answer[index].classList.toggle('active');
-}
-})
+question.forEach((element, index) => {
+  element.onclick = () => {
+    // answer.forEach((ans)=>{ ans.classList.remove('active')})
+    answer[index].classList.toggle("active");
+  };
+});
