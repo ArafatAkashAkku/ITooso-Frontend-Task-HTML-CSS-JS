@@ -106,6 +106,25 @@ var reviewswiper = new Swiper(".review-swiper", {
   },
 });
 
+// best top seller section 
+var bestTopSwiper = new Swiper(".best-top-swiper", {
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    }
+  },
+});
+
 // animation on scroll
 AOS.init();
 

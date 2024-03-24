@@ -39,7 +39,7 @@ a {
 /* root css start  */
 
 :root {
-  --left-right-padding: 10vh 4vw 0;
+  --top-left-right-padding: 10vh 4vw 0;
   --light-green: #54af35;
   --light-white: #fffbe8;
   --dark-green: #0c7733;
@@ -52,7 +52,7 @@ a {
 /* header start  */
 
 header {
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
   padding-top: 0;
   background-color: var(--light-yellow);
   height: 10vh;
@@ -341,7 +341,7 @@ header .side-nav ul li i {
 /* popular category section start  */
 
 #popular-category {
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
   position: relative !important;
 }
 
@@ -358,9 +358,10 @@ header .side-nav ul li i {
   position: static !important;
 }
 
-.product-swiper img {
+.product-swiper img, .best-top-swiper img {
   width: 100%;
   height: 370px;
+  object-fit: cover;
 }
 
 .product-next {
@@ -375,7 +376,7 @@ header .side-nav ul li i {
   font-size: 24px;
 }
 
-.product-swiper .swiper-slide {
+.product-swiper .swiper-slide, .best-top-swiper .swiper-slide{
   background-color: var(--light-white);
   display: flex;
   flex-direction: column;
@@ -384,11 +385,11 @@ header .side-nav ul li i {
 }
 
 .product-swiper .swiper-slide h3,
-.product-swiper .swiper-slide p {
+.product-swiper .swiper-slide p, .best-top-swiper .swiper-slide h3, .best-top-swiper .swiper-slide p{
   font-weight: 300;
 }
 
-.product-swiper .swiper-slide a {
+.product-swiper .swiper-slide a, .best-top-swiper .swiper-slide a{
   padding: 15px 10px;
   background-color: var(--light-yellow);
   color: var(--light-white);
@@ -396,16 +397,16 @@ header .side-nav ul li i {
   width: 50%;
 }
 
-.product-swiper .swiper-slide a:hover {
+.product-swiper .swiper-slide a:hover, .best-top-swiper .swiper-slide a:hover{
   background-color: var(--light-green);
 }
 
 .product-swiper .swiper-button-next::after,
-.product-swiper .swiper-button-prev::after {
+.product-swiper .swiper-button-prev::after, .best-top-swiper .swiper-button-next::after, .best-top-swiper .swiper-button-prev::after{
   content: "";
 }
 
-.product-swiper .pills {
+.product-swiper .pills, .best-top-swiper .pills{
   position: absolute;
   right: 5px;
   top: 5px;
@@ -417,10 +418,32 @@ header .side-nav ul li i {
 
 /* popular category section end  */
 
+/* best top seller section start  */
+
+#best-top-seller{
+  display: flex;
+  padding: var(--top-left-right-padding);
+  gap: 4%;
+  width: 100%;  
+}
+
+#best-top-seller h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#best-top-seller h1 span {
+  color: var(--light-yellow);
+}
+
+.best-seller, .top-seller{
+  width: 48%;
+}
+
 /* popular section start  */
 
 #popular {
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
 }
 
 .popular-content {
@@ -482,7 +505,7 @@ header .side-nav ul li i {
 /* brand section start  */
 
 #brands {
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
 }
 
 .brand-image {
@@ -507,7 +530,7 @@ header .side-nav ul li i {
 /* reviews section start */
 
 #reviews {
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
 }
 
 #reviews h1 {
@@ -553,7 +576,7 @@ header .side-nav ul li i {
 #weekly-deals {
   display: flex;
   width: 100%;
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
   padding-bottom: 10vw;
   background-color: var(--light-yellow);
   gap: 40px;
@@ -623,7 +646,7 @@ header .side-nav ul li i {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
 }
 
 #faqs h1 {
@@ -670,7 +693,7 @@ header .side-nav ul li i {
 /* contact section start  */
 
 #contact {
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
   display: flex;
   flex-direction: column;
 }
@@ -761,7 +784,7 @@ header .side-nav ul li i {
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
 }
 
 #feature-list .features {
@@ -792,7 +815,7 @@ footer {
   flex-direction: column;
   gap: 40px;
   width: 100%;
-  padding: var(--left-right-padding);
+  padding: var(--top-left-right-padding);
   padding-top: 10px;
   background-color: var(--light-yellow);
   margin-top: 20px;
