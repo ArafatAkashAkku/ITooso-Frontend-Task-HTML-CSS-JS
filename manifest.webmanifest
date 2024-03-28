@@ -1,17 +1,1 @@
-{
-    "lang": "en-us",
-    "name": "ITooso Frontend Task",
-    "short_name": "ITooso",
-    "description": "Frontend Task",
-    "start_url": "/",
-    "background_color": "#2f3d58",
-    "theme_color": "#2f3d58",
-    "orientation": "any",
-    "display": "standalone",
-    "icons": [
-        {
-            "src": "/images/HomePicture512.png",
-            "sizes": "512x512"
-        }
-    ]
-}
+{ "lang": "en-us", "name": "ITooso Frontend Task", "short_name": "ITooso", "description": "Frontend Task", "start_url": "/", "background_color": "#2f3d58", "theme_color": "#2f3d58", "orientation": "any", "display": "standalone", "icons": [ { "src": "/images/HomePicture512.png", "sizes": "512x512" } ] }
